@@ -2,11 +2,14 @@ package main
 
 import (
 	"fmt"
+	"strings"
 )
 
 //practice reverse a string this is a helper function
 func reverseString(s string) string{
 	var reverse string
+	//make s to lowercase
+	s = strings.ToLower(s)
 	for i := len(s) - 1; i>= 0; i--{
 		reverse += string(s[i])
 	}
